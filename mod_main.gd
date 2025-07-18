@@ -18,7 +18,7 @@ func _init() -> void:
 	)
 
 func _ready() -> void:
-	var overlay_path = mod_dir_path.path_join("content/overlay.tscn")
+	var overlay_path = mod_dir_path.path_join("content/brainrot_overlay.tscn")
 	var overlay_instance: Control = load(overlay_path).instantiate()
 	overlay_instance.process_mode = Node.PROCESS_MODE_ALWAYS
 

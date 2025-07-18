@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bnrriif6s7y2p"]
+[gd_scene load_steps=7 format=3 uid="uid://xoltjtfimx4q"]
 
-[ext_resource type="Texture2D" uid="uid://dueobyt0ywf1e" path="res://mods-unpacked/ZackeryRSmith-Brainrot/content/images/doge.webp" id="1_qw28b"]
-[ext_resource type="Script" uid="uid://dyxll2l6lx8st" path="res://mods-unpacked/ZackeryRSmith-Brainrot/content/overlay.gd" id="1_sn6mm"]
+[ext_resource type="Script" uid="uid://ca7ikql1f2f1w" path="res://mods-unpacked/ZackeryRSmith-Brainrot/content/brainrot_overlay.gd" id="1_gkdy5"]
+[ext_resource type="Texture2D" uid="uid://blyr88tyvlles" path="res://mods-unpacked/ZackeryRSmith-Brainrot/content/images/2p2i4.jpg" id="2_ppqq4"]
 
 [sub_resource type="Animation" id="Animation_c3p3n"]
 length = 0.001
@@ -93,7 +93,7 @@ _data = {
 &"fade_out": SubResource("Animation_w6b5h")
 }
 
-[node name="Overlay" type="Control"]
+[node name="BrainrotOverlay" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -101,32 +101,39 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-script = ExtResource("1_sn6mm")
+script = ExtResource("1_gkdy5")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 99
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0)
-offset_right = 496.165
-offset_bottom = 372.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("1_qw28b")
+texture = ExtResource("2_ppqq4")
 expand_mode = 3
-stretch_mode = 5
+stretch_mode = 4
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
 libraries = {
 &"": SubResource("AnimationLibrary_5kkpp")
 }
 
 [node name="HoldTimer" type="Timer" parent="."]
+unique_name_in_owner = true
 one_shot = true
 
 [node name="RandomIntervalTimer" type="Timer" parent="."]
-one_shot = true
+unique_name_in_owner = true
 autostart = true
 
 [connection signal="timeout" from="HoldTimer" to="." method="_on_hold_timer_timeout"]

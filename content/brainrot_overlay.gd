@@ -4,11 +4,11 @@ const MOD_ID := "ZackeryRSmith-Brainrot"
 const LOG_NAME := "ZackeryRSmith-Brainrot:Main"
 var mod_dir_path := ModLoaderMod.get_unpacked_dir().path_join(MOD_ID)
 
-@onready var texture_rect = $CanvasLayer/TextureRect
-@onready var audio_player = $AudioStreamPlayer
-@onready var hold_timer = $HoldTimer
-@onready var anim_player = $AnimationPlayer
-@onready var random_interval_timer = $RandomIntervalTimer
+@onready var texture_rect = %TextureRect
+@onready var audio_player = %AudioStreamPlayer
+@onready var anim_player = %AnimationPlayer
+@onready var hold_timer = %HoldTimer
+@onready var random_interval_timer = %RandomIntervalTimer
 
 var allowed_to_play: bool = false
 
