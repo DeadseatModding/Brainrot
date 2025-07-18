@@ -6,8 +6,8 @@ signal play_meme(hold_time: float)
 signal stop_playing
 #endregion
 
-const MOD_DIR := "ZackeryRSmith-VineBoom"
-const LOG_NAME := "ZackeryRSmith-VineBoom:Main"
+const MOD_DIR := "ZackeryRSmith-Brainrot"
+const LOG_NAME := "ZackeryRSmith-Brainrot:Main"
 
 var mod_dir_path := ModLoaderMod.get_unpacked_dir().path_join(MOD_DIR)
 var extensions_dir_path = mod_dir_path.path_join("extensions")

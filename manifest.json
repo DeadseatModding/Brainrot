@@ -1,9 +1,9 @@
 {
-	"name": "VineBoom",
+	"name": "Brainrot",
 	"namespace": "ZackeryRSmith",
 	"version_number": "1.0.0",
-	"description": "This isn't useful, why did you install this?",
-	"website_url": "https://github.com/DeadseatModding/DisableButtons",
+	"description": "Rot your brain while you play the game!",
+	"website_url": "https://github.com/DeadseatModding/Brainrot",
 	"dependencies": [],
 	"extra": {
 		"godot": {

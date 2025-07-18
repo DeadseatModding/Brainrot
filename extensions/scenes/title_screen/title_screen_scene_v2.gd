@@ -1,7 +1,7 @@
 extends "res://scenes/title_screen/title_screen_scene_v2.gd"
 
-const MOD_ID = "ZackeryRSmith-VineBoom"
-const LOG_NAME = "ZackeryRSmith-VineBoom:TitleScreen"
+const MOD_ID = "ZackeryRSmith-Brainrot"
+const LOG_NAME = "ZackeryRSmith-Brainrot:TitleScreen"
 
 var mod_node = null
 
