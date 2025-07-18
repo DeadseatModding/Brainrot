@@ -1,0 +1,15 @@
+{
+	"name": "VineBoom",
+	"namespace": "ZackeryRSmith",
+	"version_number": "1.0.0",
+	"description": "This isn't useful, why did you install this?",
+	"website_url": "https://github.com/DeadseatModding/DisableButtons",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"authors": ["ZackeryRSmith"],
+			"compatible_mod_loader_version": ["7.0.1"],
+			"compatible_game_version": ["0.0.0"],
+		}
+	}
+}
